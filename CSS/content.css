@@ -1,0 +1,174 @@
+/* текст */
+
+h1 {
+    font-family: "font-regular";
+    font-size: 60px;
+    text-align: center;
+    color: white; 
+    line-height: 120%;
+}
+
+h2 {
+    font-family: "font-regular";
+    font-size: 40px;
+    stroke-width: 1px;
+    text-align: center;
+    color: #000356; 
+    line-height: 120%;
+}
+
+h3 {
+    font-family: "font-regular";
+    font-size: 40px;
+    text-align: center;
+    color: #000356; 
+    line-height: 120%;
+    margin-top: 30px;
+}
+
+/* общее */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    
+}
+
+/* линия 1 */
+.row1 {
+    display: inline-flex;
+}
+
+.title {
+    width: 1200px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000356;
+}
+
+.upblockrune {
+    width: 720px;
+    height: 320px;
+    background-color: #BBAFFF;
+    display: flex;
+    justify-self: flex-end;
+    flex-wrap: wrap;
+
+}
+
+/* линия 2 */
+.row2 { display: inline-flex;
+
+}
+
+.block_title1 {
+    width: 544px;
+    height: 532px;
+    background-color: #8086FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block1 {
+    width: 782px;
+    height: 296px;
+    background-color: #575EFF;
+    
+}
+
+.block2 {
+    width: 290px;
+    height: 296px;
+    background-color: #8086FF;
+
+}
+
+.block3 {
+    width: 304px;
+    height: 296px;
+    background-color: #1E24A6;
+}
+
+.row3 { display: inline-flex;
+    
+}
+
+.block4 {
+    width: 544px;
+    height: 340px;
+    background-color: #1E24A6;
+    
+}
+
+.block5 {
+    width: 476px;
+    height: 576px;
+    background-color: #BBAFFF;
+    margin-top: -236px;
+    
+}
+
+.block6 {
+    width: 900px;
+    height: 576px;
+    background-color: #C9DCFF;
+    margin-top: -236px;
+    
+}
+
+.row4 { display: inline-flex;
+    
+}
+
+.block7 {
+    width: 1220px;
+    height: 140px;
+    background-color: #575EFF;
+    
+}
+
+.block8 {
+    width: 610px;
+    height: 540px;
+    background-color: #C9DCFF;
+    margin-top: 140px;
+    margin-left: -1220px;
+    
+}
+
+.block9 {
+    width: 610px;
+    height: 540px;
+    background-color: #1E24A6;
+    margin-top: 140px;
+    
+}
+
+.block_title2 {
+    width: 700px;
+    height: 680px;
+    background-color: #8086FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block_title3 {
+    width: 1920px;
+    height: 300px;
+    background-color: #8086FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block10 {
+    width: 1920px;
+    height: 960px;
+    background-color: #C9DCFF;
+    
+}
