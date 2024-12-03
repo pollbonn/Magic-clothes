@@ -2,8 +2,9 @@
 
 h1 {
     font-family: "font-regular";
-    font-size: 60px;
-    text-align: center;
+    font-size: 80px;
+    margin-left: 90px;
+    text-align: left;
     color: white; 
     line-height: 120%;
 }
@@ -53,15 +54,35 @@ body {
     width: 720px;
     height: 320px;
     background-color: #BBAFFF;
-    display: flex;
-    justify-self: flex-end;
-    flex-wrap: wrap;
+    clip-path: fill-box;
 
 }
 
+.runeline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.runeline {
+    animation: runeline 2s linear infinite;
+}
+
+@keyframes runeline
+{ 0% { transform: translateX(-1px);} 
+    100% { transform: translateX(-318px);}
+}
+.circleofrunes1 {
+    align-self: center;
+    animation: rotate1 9s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  } 
+  
 /* линия 2 */
 .row2 { display: inline-flex;
-
 }
 
 .block_title1 {
@@ -71,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    clip: auto;
 }
 
 .block1 {
@@ -101,6 +123,8 @@ body {
     width: 544px;
     height: 340px;
     background-color: #1E24A6;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -117,7 +141,28 @@ body {
     height: 576px;
     background-color: #C9DCFF;
     margin-top: -236px;
-    
+    background: transparent;
+    animation: bgColor infinite linear 5s;
+    clip-path: fill-box;
+    display: flex;
+
+}
+
+.circle2 {
+    animation:rotate1 40s infinite;
+    margin-top: 150px;
+    margin-bottom: 24px;
+
+
+}
+
+@keyframes bgColor {
+    0% { background: #C9DCFF;}
+    20% { background: #BBAFFF;}
+    40% { background: #8086FF;}
+    60% { background: #575EFF}
+    80% { background: #1E24A6;}
+    100% { background: #C9DCFF;}
 }
 
 .row4 { display: inline-flex;
