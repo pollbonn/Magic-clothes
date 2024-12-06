@@ -1,4 +1,9 @@
 /* текст */
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 
 h1 {
     font-family: "font-regular";
@@ -77,7 +82,7 @@ body {
 }
 
 @keyframes rotate1 {
-    0% {transform: rotate(0deg);}
+    0% { transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
   } 
   
@@ -115,9 +120,7 @@ body {
     background-color: #1E24A6;
 }
 
-.row3 { display: inline-flex;
-    
-}
+.row3 { display: inline-flex;}
 
 .block4 {
     width: 544px;
@@ -141,11 +144,9 @@ body {
     height: 576px;
     background-color: #C9DCFF;
     margin-top: -236px;
-    background: transparent;
-    animation: bgColor infinite linear 5s;
-    clip-path: fill-box;
-    display: flex;
-
+    animation: bgColor 5s linear  infinite ;
+    overflow: hidden;
+    position: relative;
 }
 
 .circle2 {
@@ -179,6 +180,15 @@ body {
     }
 }
 
+
+@keyframes bgColor {
+    0% { background: #C9DCFF;}
+    20% { background: #BBAFFF;}
+    40% { background: #8086FF;}
+    60% { background: #575EFF}
+    80% { background: #1E24A6;}
+    100% { background: #C9DCFF;}
+}
 
 .row4 { display: inline-flex;
     
