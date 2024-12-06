@@ -149,21 +149,36 @@ body {
 }
 
 .circle2 {
-    animation:rotate1 40s infinite;
-    margin-top: 150px;
-    margin-bottom: 24px;
-
-
+    animation: rotate2 4s linear infinite;
+    /* margin-top: 150px; */
+    /* margin-bottom: 24px; */
+    align-self: start;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
 }
 
-@keyframes bgColor {
-    0% { background: #C9DCFF;}
-    20% { background: #BBAFFF;}
-    40% { background: #8086FF;}
-    60% { background: #575EFF}
-    80% { background: #1E24A6;}
-    100% { background: #C9DCFF;}
+.circle2 img {
+    width: 100%;
 }
+
+@keyframes rotate2 {
+    0% {
+        top: 0%;
+        left: 120%;
+        transform: rotate(0deg);
+        width: 90%;
+    }
+    100% {
+        top: 0%;
+        left: -100%;
+        transform: rotate(360deg);
+        width: 90%;
+    }
+}
+
 
 .row4 { display: inline-flex;
     
