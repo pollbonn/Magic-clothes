@@ -1,14 +1,9 @@
 /* текст */
-body{
-    width: 100%;
-    overflow-x: hidden;
-}
-
 
 h1 {
     font-family: "font-regular";
-    font-size: 80px;
-    margin-left: 90px;
+    font-size: 450%;
+    margin-left: -10%;
     text-align: left;
     color: white; 
     line-height: 120%;
@@ -16,7 +11,7 @@ h1 {
 
 h2 {
     font-family: "font-regular";
-    font-size: 40px;
+    font-size: 500%;
     stroke-width: 1px;
     text-align: center;
     color: #000356; 
@@ -25,21 +20,35 @@ h2 {
 
 h3 {
     font-family: "font-regular";
-    font-size: 40px;
+    font-size: 300%;
     text-align: center;
     color: #000356; 
     line-height: 120%;
-    margin-top: 30px;
+}
+
+.title2 {
+  font-family: "font-regular";
+    font-size: 400%;
+    text-align: center;
+    color: #000356; 
+    line-height: 120%;
+    position: relative;
 }
 
 /* общее */
 
 body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    width: 1920px;
-    
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: baseline;
+    cursor: url(../img/cursor.svg) 3 3, auto;
+ 
 }
+
+
 
 /* линия 1 */
 .row1 {
@@ -47,8 +56,8 @@ body {
 }
 
 .title {
-    width: 1200px;
-    height: 320px;
+    width: 62.5vw;
+    height: 17vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,10 +65,12 @@ body {
 }
 
 .upblockrune {
-    width: 720px;
-    height: 320px;
+    width: 37.5vw;
+    height: 17vw;
     background-color: #BBAFFF;
     clip-path: fill-box;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -82,7 +93,7 @@ body {
 }
 
 @keyframes rotate1 {
-    0% { transform: rotate(0deg);}
+    0% {transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
   } 
   
@@ -91,92 +102,217 @@ body {
 }
 
 .block_title1 {
-    width: 544px;
-    height: 532px;
+    width: 28.3vw;
+    height: 27.7vw;
     background-color: #8086FF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    clip: auto;
+    clip-path: fill-box;
+}
+
+.title1_pic {
+    width: 28.3vw;
+    height: 27.7vw;
+  position: absolute;
+  transition: 1s;
+}
+
+.title1_pic:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+
+.patch {
+  width: 19.3vw;
+  height: 15.5vw;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: -13%;
+
+}
+
+.button1 {
+  width: 3.9vw;
+  height: 3.9vw;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 60%;
+
+}
+
+.button2 {
+    width: 3.9vw;
+    height: 3.9vw;
+  position: absolute;
+  margin-top: 80%;
+  margin-left: 30%;
+
+}
+
+.threads1 {
+  width: 6.3vw;
+  height: 5.1vw;
+  position: absolute;
+  margin-top: 74%;
+  margin-left: 4%;
+
+}
+
+.threads2 {
+  width: 6.3vw;
+  height: 5.1vw;
+  position: absolute;
+  margin-left: 74%;
+
+}
+
+.cards {
+  position: absolute;
+  margin-top: 74%;
+  margin-left: 50%;
+
 }
 
 .block1 {
-    width: 782px;
-    height: 296px;
+    width: 40.7vw;
+    height: 15.4vw;
     background-color: #575EFF;
-    
-}
-
-.block2 {
-    width: 290px;
-    height: 296px;
-    background-color: #8086FF;
-
-}
-
-.block3 {
-    width: 304px;
-    height: 296px;
-    background-color: #1E24A6;
-}
-
-.row3 { display: inline-flex;}
-
-.block4 {
-    width: 544px;
-    height: 340px;
-    background-color: #1E24A6;
+    clip-path: fill-box;
     display: flex;
+    align-items: center;
     justify-content: center;
     
 }
 
-.block5 {
-    width: 476px;
-    height: 576px;
-    background-color: #BBAFFF;
-    margin-top: -236px;
+.waves {
+    width: 40.7vw;
+  position: absolute;
+
+}
+
+.waves {
+    animation: waves 4s linear infinite;
+}
+
+@keyframes waves
+{ 0% { transform: translateX(-40.5vw);} 
+    100% { transform: translateX(0);}
+}
+
+.block2 {
+    width: 15.4vw;
+    height: 15.4vw;
+    background-color: #8086FF;
+    clip-path: fill-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rhomb {
+    align-self: center;
+    animation: rhomb 3s alternate-reverse infinite;
+}
+
+@keyframes rhomb
+{ 0% { transform: scale(1);} 
+    100% { transform: scale(2);}
+}
+
+
+.block3 {
+    width: 15.8vw;
+    height: 15.8vw;
+    background-color: #1E24A6;
+    clip-path: fill-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern {
+    animation: pattern 2s alternate-reverse infinite;
+}
+
+@keyframes pattern 
+{ 0% {opacity: 100%;}
+100% {opacity: 10%;}}
+
+
+
+.row3 { display: inline-flex;
     
 }
 
+.block4 {
+    width: 28.3vw;
+    height: 17.7vw;
+    background-color: #1E24A6;
+    clip-path: fill-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.logo {
+    width: 320vw;
+    margin-left: 20%;
+}
+
+.block5 {
+    width: 24.7vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -12.3%;
+    margin-left: -0.5%;
+    background: url(../img/cloth.svg) no-repeat;
+    background-size: auto;
+    background-position: 15% 0;
+    animation: change 3s steps(3) infinite;
+    
+}
+
+@keyframes change {
+    0%{background-position: 0% 0%;}
+    100% {background-position: -74.3vw 0%; }
+}
+
+
 .block6 {
-    width: 900px;
-    height: 576px;
+    width: 48vw;
+    height: 30vw;
     background-color: #C9DCFF;
-    margin-top: -236px;
-    animation: bgColor 5s linear  infinite ;
-    overflow: hidden;
-    position: relative;
+    margin-top: -12.3%;
+    background: transparent;
+    animation: bgColor infinite linear 5s;
+    clip-path: fill-box;
+    display: flex;
+    justify-content: center;
+
 }
 
 .circle2 {
-    animation: rotate2 4s linear infinite;
-    /* margin-top: 150px; */
-    /* margin-bottom: 24px; */
-    align-self: start;
+    animation: rotate2 10s linear infinite;
     transform-origin: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 100%;
+    margin-top: 10%;
+   
 }
 
-.circle2 img {
-    width: 100%;
-}
 
 @keyframes rotate2 {
     0% {
-        top: 0%;
-        left: 120%;
         transform: rotate(0deg);
-        width: 90%;
     }
     100% {
-        top: 0%;
-        left: -100%;
         transform: rotate(360deg);
-        width: 90%;
     }
 }
 
@@ -195,50 +331,362 @@ body {
 }
 
 .block7 {
-    width: 1220px;
-    height: 140px;
-    background-color: #575EFF;
+    width: 63.5vw;
+    height: 7.3vw;
+    background-color: #8086FF;
+    clip-path: fill-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.embroidery {
+    width: 63.2vw;
+    height: 5.3vw;
+    clip-path: fill-box;
+    display: flex;
+    justify-content: center;
+    margin-left: 100%;
+    position: absolute;
+    transition: 3s ease-in-out;
+
+}
+
+.embroidery:hover {
+      margin-left: 10%;
+      z-index: 2;
+    }
 
 .block8 {
-    width: 610px;
-    height: 540px;
+    width: 31.7vw;
+    height: 28.1vw;
     background-color: #C9DCFF;
-    margin-top: 140px;
-    margin-left: -1220px;
-    
-}
-
-.block9 {
-    width: 610px;
-    height: 540px;
-    background-color: #1E24A6;
-    margin-top: 140px;
-    
-}
-
-.block_title2 {
-    width: 700px;
-    height: 680px;
-    background-color: #8086FF;
+    margin-top: 7.3%;
+    margin-left: -64%;
+    clip-path: fill-box;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sewing_machine {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.needle {
+    position: relative;
+    margin-bottom: 6.25vw;
+    margin-left: 25.4vw;
+    animation: needle 0.5s alternate-reverse infinite;
+}
+
+@keyframes needle
+{ 0% { margin-bottom: 25%;} 
+    100% { margin-bottom: 20%;}
+}
+
+
+.block9 {
+    width: 31.7vw;
+    height: 28.1vw;
+    background-color: #1E24A6;
+    margin-top: 7.3%;
+    clip-path: fill-box;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.stitch {
+    width: 63.5vw;
+    height: 24.2vw;
+    position: absolute;
+    transition: 0.5s;
+    animation: stitch 4s linear infinite;
+}
+
+.stitch:hover {
+    opacity: 50%;;
+}
+
+@keyframes stitch
+  { 0% { transform: translateX(0);} 
+      100% { transform: translateX(-31.7vw);}
+  }
+
+.block_title2 {
+    width: 37.1vw;
+    height: 35.4vw;
+    background-color: #575EFF;
+    clip-path: fill-box;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.allrunes {
+    position: absolute;
+    width: 36.4vw;
+    height: 35.4vw;
+    clip-path: fill-box;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transition: 1s;
+}
+
+.allrunes:hover {
+      transform: scale(1.2);
+      z-index: 2;
+    }
+
+.rune1 {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -70%;
+    width: 6.1vw;
+    height: 5.8vw;
+}
+
+.rune2 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -35%;
+    width: 3.9vw;
+    height: 5.6vw;
+}
+
+.rune3 {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: -10%;
+    width: 4.7vw;
+    height: 4vw;
+}
+
+.rune4 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    width: 2.9vw;
+    height: 4.8vw;
+}
+
+.rune5 {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 60%;
+    width: 5.6vw;
+    height: 7.3vw;
+}
+
+.rune6 {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: -70%;
+    width: 3.3vw;
+    height: 5.6vw;
+}
+
+.rune7 {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 70%;
+    width: 4.5vw;
+    height: 6.8vw;
+}
+
+.rune8 {
+    position: absolute;
+    margin-top: 70%;
+    margin-left: -60%;
+    width: 4.8vw;
+    height: 5.8vw;
+}
+
+.rune9 {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: -86%;
+    width: 3.1vw;
+    height: 4.3vw;
+}
+
+.rune10 {
+    position: absolute;
+    margin-top: 84%;
+    margin-left: -30%;
+    width: 3.5vw;
+    height: 3.8vw;
+}
+
+.rune11 {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 20%;
+    width: 2.5vw;
+    height: 4.5vw;
+}
+
+.rune12 {
+    position: absolute;
+    margin-top: 64%;
+    margin-left: 70%;
+    width: 7.5vw;
+    height: 7vw;
+}
+
+.rune13 {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 76%;
+    width: 4.4vw;
+    height: 5.6vw;
+}
+
+.n3 {
+    font-family: "font-regular";
+    font-size: 900%;
+    stroke-width: 0.2vw;
+    text-align: left;
+    color: #000356; 
+    line-height: 120%;
+    margin-left: 5%;
+
+}
+
+.texttitle3 {
+    font-family: "font-regular";
+    font-size: 300%;
+    stroke-width: 0.1vw;
+    text-align: left;
+    color: #000356; 
+    line-height: 120%;
+    margin-left: 2%;
+
 }
 
 .block_title3 {
-    width: 1920px;
-    height: 300px;
+    width: 100%;
+    height: 15.6vw;
     background-color: #8086FF;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    z-index: 2;
+    
+    
 }
 
-.block10 {
-    width: 1920px;
-    height: 960px;
-    background-color: #C9DCFF;
+.sun {
+    width: 18.75vw;
+    height: 8.3vw;
+    position: absolute;
+    margin-left: 71%;
+    transition: 0.1s;
+
+}
+
+.sun:hover {
+    width: 18.75vw;
+    opacity: 0%;
+}
+
+.moon
+{  width: 18.75vw;
+    height: 8.3vw;
+    margin-left: 14.2%;
+    position: relative;
+    z-index: -1;
+  
+  
     
+}
+
+
+.block10 {
+    width: 100%;
+    height: 50vw;
+    background-color: #1E24A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: fill-box;
+    animation: block10 4s alternate-reverse infinite;
+    
+}
+
+@keyframes block10
+{ 0% { background-color: #1E24A6;} 
+    100% { background-color: #C9DCFF;
+    }
+}
+
+.sunamdmoon {
+    width: 60.5vw;
+    height: 22.1vw;
+    position: relative;
+    margin-left:-70%;
+    margin-top: -25%;
+    animation: sunamdmoon 4s alternate-reverse infinite;
+}
+
+@keyframes sunamdmoon {
+    0% { margin-left: -65%;
+        margin-top: -25%;}
+    100% { margin-left: 35%;
+        margin-top: -25;}
+}
+
+
+.day {
+    display: flex;
+    justify-self: flex-start;
+    width: 100%;
+    position: absolute;
+}
+
+.night { 
+    display: flex;
+    justify-self: center;
+    width: 100%;position: absolute;
+    animation: night 4s alternate-reverse infinite;
+}
+
+@keyframes night {
+    0% { opacity: 100;}
+    100% { opacity: 0%;}
+}
+
+/* подвал */
+.basement {
+    width: 100%;
+    height: 41.6vw;
+    background-color: #1E24A6;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hselogo {
+    width: 58.8vw;
+    height: 23.8vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.mynameis {
+    font-family: "font-regular";
+    color: #ffffff;
+    font-size: 260%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
