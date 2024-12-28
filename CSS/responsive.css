@@ -137,7 +137,7 @@ h3 {font-size: 225%;}
     display: flex;
     align-content: start;
     scale: 71%;
-    margin-left: -30%;
+    margin-left: -35%;
 }
 .title1_pic {
     width: 46vw;
@@ -214,12 +214,14 @@ margin-top: -4%;}
 
 .sun {
     scale: 71%;
+    margin-top: -2%;
 
 }
 
 .moon {
     scale: 71%;
-   margin-left: 11.5%;
+   margin-left: 10.7%;
+   margin-top: -2%;
 
 }
 
@@ -227,7 +229,8 @@ margin-top: -4%;}
     scale: 71%;
 }
 
-.day  { scale: 72%; margin-right: 28%;}
+.day  { scale: 72%; 
+    margin-right: 28%;}
 
 .night  { scale: 72%; margin-right: 28%;}
 
@@ -241,7 +244,7 @@ margin-top: -4%;}
 
 .mynameis {
     font-size: 184%;
-    margin-left: 7%}
+    margin-left: 7%; margin-top: 2%;}
 
 
 }
@@ -252,19 +255,19 @@ margin-top: -4%;}
     body {max-width: fit-content;
         margin: 0 auto;}
 
-    h1 {font-size: 273%;}
+    h1 {font-size: 297%;}
 
-    h2 {font-size: 356%;}
+    h2 {font-size: 330%;}
 
-    h3 {font-size: 205%;}
+    h3 {font-size: 198%;}
 
-    .title2 { font-size: 273%;}
+    .title2 { font-size: 297%;}
 
     .runeline {
         display: flex;
         align-content: start;
         scale: 66%;
-        margin-left: -30%;
+        margin-left: -46%;
     }
 
     .title1_pic {
@@ -299,7 +302,7 @@ margin-top: -4%;}
 
     .circle2 {
         scale: 66%;
-        margin-top: 4%;
+        margin-top: 1%;
        
     }
 
@@ -307,13 +310,13 @@ margin-top: -4%;}
         scale: 66%;
         display: flex;
         align-self: center;
-        margin-bottom: -4.5%;
+        margin-bottom: -6.5%;
     }
 
     .stitch {
         scale: 66%;
         display: flex;
-        justify-content: start;align-items: center; margin-left: -7.5%;
+        justify-content: start;align-items: center; margin-left: -9%;
     }
 
     .allrunes  {
@@ -325,21 +328,23 @@ margin-top: -4%;}
     margin-top: -4%;}
 
     .n3 {
-        font-size: 675%;
+        font-size: 594%;
     
     }
 
     .texttitle3 {
-        font-size: 225% ;
+        font-size: 198% ;
     }
 
     .sun {
-        scale: 75%;
+        scale: 66%;
+        margin-top: -2%;
     
     }
 
     .moon {
-       width: 14vw;
+        scale: 66%;
+        margin-top: -2%;
     
     }
 
@@ -347,9 +352,9 @@ margin-top: -4%;}
         scale: 67%;
     }
 
-    .day  { scale: 67%;}
+    .day  { scale: 67%; margin-right: 33%;}
 
-    .night  { scale: 67%;}
+    .night  { scale: 67%; margin-right: 33%;}
 
     .hselogo {
         scale: 75%;
@@ -378,35 +383,35 @@ margin-top: -4%;}
 /* 1024x768 XGA */
 @media screen and (min-width: 1024px) and (max-width: 1279px) { 
     body { width: 100%;
-        display: flex;
+    display: flex;
     justify-content: center;}
 
-    h1 {font-size: 300%;}
+    h1 {font-size: 248%;}
 
-    h2 {font-size: 375%;}
+    h2 {font-size: 266%;}
 
-    h3 {font-size: 225%;}
+    h3 {font-size: 160%;}
 
-    .title2 { font-size: 300%;}
+    .title2 { font-size: 248%;}
 
     .runeline {
         display: flex;
         align-content: start;
-        scale: 75%;
-        margin-left: -30%;
+        scale: 53.3%;
+        margin-left: -76%;
     }
 
     .title1_pic {
-        width: 46vw;
-    height: 44vw;
-    scale: 70%;
+        width: 48vw;
+    height: 46vw;
+    scale: 66%;
     display: flex;
     align-self: center;}
 
     .waves {
         display: flex;
         justify-self: start;
-        scale: 75%;
+        scale: 53.3%;
         animation: waves 4s linear infinite;
         margin-right: 17%;
     }
@@ -419,7 +424,7 @@ margin-top: -4%;}
         display: flex;
         justify-self: center;
         margin: 10%;
-        scale: 75%;
+        scale: 53.3%;
     }
 
     .block5 {
@@ -427,70 +432,71 @@ margin-top: -4%;}
     }
 
     .circle2 {
-        scale: 75%;
-        margin-top: 4%;
+        scale: 53.3%;
+        margin-top: -6%;
        
     }
 
     .sewing_machine {
-        scale: 75%;
+        scale: 53.3%;
         display: flex;
         align-self: center;
-        margin-bottom: -4.5%;
+        margin-bottom: -11.5%;
     }
 
     .stitch {
-        scale: 75%;
+        scale: 53.3%;
         display: flex;
-        justify-content: start;align-items: center; margin-left: -7.5%;
+        justify-content: start;align-items: center; margin-left: -12%;
     }
 
     .allrunes  {
-        width: 40.4vw;
-        height: 39.4vw;
-    scale: 90%;
+        width: 70.4vw;
+        height: 68.4vw;
+    scale: 60%;
     display: flex;
     align-self: center;
-    margin-top: -4%;}
+    margin-top: -4%; margin-left: -6%;}
 
     .n3 {
-        font-size: 675%;
+        font-size: 480%;
     
     }
 
     .texttitle3 {
-        font-size: 225% ;
+        font-size: 160% ; 
     }
 
     .sun {
-        scale: 75%;
+        scale: 53.3%; margin-top: -4%;
     
     }
 
     .moon {
-       width: 14vw;
+        scale: 53.3%; margin-top: -4%;
+
     
     }
 
     .sunamdmoon {
-        scale: 67%;
+        scale: 53.3%;
     }
 
-    .day  { scale: 67%;}
+    .day  { scale: 53.3%; margin-left: -45%;}
 
-    .night  { scale: 67%;}
+    .night  { scale: 53.3%; margin-left: -45%;}
 
     .hselogo {
-        scale: 75%;
+        scale: 53.3%;
         display: flex;
         align-self: flex-start;
-        margin-left: -11%;
+        margin-left: -22%;
 
     }
 
     .mynameis {
-        font-size: 195%;
-        margin-top: 2%;
+        font-size: 138%;
+        margin-top: -2%;
     }
 
 
